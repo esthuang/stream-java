@@ -30,7 +30,7 @@ import io.getstream.client.model.feeds.Feed;
 // Find your API keys here https://getstream.io/dashboard/
 
 ClientConfiguration streamConfig = new ClientConfiguration().setRegion(StreamRegion.US_EAST);
-StreamClient streamClient = new StreamClientImpl(streamConfig, 'API_KEY', 'API_SECRET');
+StreamClient streamClient = new StreamClientImpl(streamConfig, "API_KEY", "API_SECRET");
 
 // Instantiate a feed object
 Feed feed = streamClient.newFeed("user", "1");
