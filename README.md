@@ -91,7 +91,7 @@ String token = feed.getToken();
 
 // Retrieve first 10 followers of a feed
 FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
-List<FeedFollow> followingPaged = feed.getFollowing(filter);
+List<FeedFollow> followersPaged = feed.getFollowers(filter);
 
 // Retrieve the first 10 followed feeds
 FeedFilter filter = new FeedFilter.Builder().withLimit(10).build();
